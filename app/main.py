@@ -43,7 +43,7 @@ def count_word_occurrences(text: str, word: str) -> int:
 
 
 @app.get("/word-count", tags=["Word Count"])
-def get_word_count():
+def get_word_count() -> list[KeywordResponse]:
     """Return a list of all counted words"""
 
     logging.info("Retrieving word counts...")
